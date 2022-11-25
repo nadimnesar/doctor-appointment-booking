@@ -3,12 +3,10 @@ body{
 }
 
 .header{
+    overflow: hidden;
     background-color: black;
     color: white;
-    text-align: left;
-    height: 50px;
-    padding-top: 50px;
-    padding-right: 30px;
-    padding-bottom: 50px;
-    padding-left: 80px;
+    text-align: center;
+    padding: 20px 10px;
+    border-radius: 4px;
 }
