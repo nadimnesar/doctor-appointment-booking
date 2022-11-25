@@ -1,3 +1,14 @@
+html{
+    overflow-x: hidden;
+}
+
+body{
+    background: #10101a;
+    font-family: sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+}
+
 .header{
     background-color: black;
     color: white;
