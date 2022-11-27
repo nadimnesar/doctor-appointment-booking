@@ -146,11 +146,13 @@ a:active {
     height: 90%;
     width: 90%;
     border-radius: 5px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .dr-img-m {
     padding-top: 10px;
-    padding-left: 2px;
 }
 
 .dr-info h3 {
