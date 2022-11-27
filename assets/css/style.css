@@ -46,8 +46,14 @@ a:active {
     padding-top: 5px;
 }
 
+.nav-ul-r{
+    display: flex;
+    list-style: none;
+    margin-left: auto;
+}
+
 .nav-items-r {
     padding-right: 20px;
     padding-top: 5px;
-    margin-left: 550px;
+    
 }
