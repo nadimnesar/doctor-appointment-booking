@@ -73,3 +73,9 @@ a:active {
     font-size: 20px;
     color: #444444;
 }
+
+
+.search-box {
+    margin: auto;
+    text-align: center;
+}
