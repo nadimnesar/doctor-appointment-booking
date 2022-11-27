@@ -183,6 +183,11 @@ a:active {
     font-size: 11pt;
 }
 
+.dr-info span {
+    font-size: 12pt;
+    color: #444444;
+}
+
 .dr-info ul {
     padding-left: 0px;
     list-style: none;
