@@ -28,8 +28,26 @@ a:active {
 
 .header-nav {
     background-color: white;
+    font-size: 22px;
+    display: flex;
 }
 
-.header-menu {
-    padding: 20px;
+.nav-logo {
+    padding: 22px;
+}
+
+.nav-ul{
+    display: flex;
+    list-style: none;
+}
+
+.nav-items {
+    padding-right: 20px;
+    padding-top: 5px;
+}
+
+.nav-items-r {
+    padding-right: 20px;
+    padding-top: 5px;
+    margin-left: 550px;
 }
