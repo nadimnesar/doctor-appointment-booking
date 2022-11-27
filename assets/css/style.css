@@ -60,7 +60,7 @@ a:active {
 }
 
 .search-txt {
-    padding-top: 90px;
+    padding-top: 100px;
     text-align: center;
     line-height: 10pt;
 }
@@ -99,4 +99,12 @@ a:active {
     display: inline-block;
     font-size: 15px;
     border-radius: 5px;
-  }
+}
+
+.backg {
+    padding-top: 130px;
+    width: 1349px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
