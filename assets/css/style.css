@@ -1,23 +1,24 @@
 body {
     background: #f8f9fa;
     margin: 0px;
+    font-family: sans-serif;
 }
 
 a:link {
     text-decoration: none;
-    text-align: center;
     padding: 20px 10px;
-    outline: none;
+    color: black;
 }
 
 a:visited {
     text-decoration: none;
     padding: 7px 10px;
+    color: #0c01fe;
 }
 
 a:hover {
     text-decoration: none;
-    color: black;
+    color: #0c01fe;
     padding: 7px 10px;
 }
 
