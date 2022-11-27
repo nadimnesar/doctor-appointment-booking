@@ -29,6 +29,7 @@ a:active {
 
 .header-nav {
     background-color: white;
+    box-shadow: 1px 1px rgb(238, 238, 238);
     font-size: 22px;
     display: flex;
 }
@@ -59,7 +60,7 @@ a:active {
 }
 
 .search-txt {
-    padding-top: 85px;
+    padding-top: 90px;
     text-align: center;
     line-height: 10pt;
 }
