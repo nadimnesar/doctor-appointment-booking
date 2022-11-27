@@ -37,7 +37,7 @@ a:active {
     padding: 22px;
 }
 
-.nav-ul{
+.nav-ul {
     display: flex;
     list-style: none;
 }
@@ -47,7 +47,7 @@ a:active {
     padding-top: 5px;
 }
 
-.nav-ul-r{
+.nav-ul-r {
     display: flex;
     list-style: none;
     margin-left: auto;
@@ -56,5 +56,20 @@ a:active {
 .nav-items-r {
     padding-right: 20px;
     padding-top: 5px;
-    
+}
+
+.search-txt {
+    padding-top: 35px;
+    text-align: center;
+    line-height: 10pt;
+}
+
+.search-txt h1 {
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.search-txt p {
+    font-size: 20px;
+    color: #444444;
 }
