@@ -1,38 +1,21 @@
 body{
-    background: white;
+    background: #f8f9fa;
     font-family: sans-serif;
     font-size: 15px;
     font-weight: 400;
     margin: 0;
 }
 
-.header{
-    background-color: black;
-    color: white;
-    text-align: center;
-    padding: 18px 10px;
-}
-
-.nav{
-    background-color: rgb(212, 212, 212);
-    color: black;
-    text-align: center;
-    padding: 8px 2px;
-    box-shadow: 0px 1px 2px 2px rgb(182, 182, 182);
-}
- 
 a:link {
     text-decoration: none;
     padding: 7px 10px;
     outline: none;
 }
 
-
 a:visited {
     text-decoration: none;
     padding: 7px 10px;
 }
-
 
 a:hover {
     text-decoration: none;
@@ -44,14 +27,3 @@ a:active {
     text-decoration: none;
     padding: 7px 10px;
 }
-
-.footer{
-    bottom: 0px;
-    width: 100%;
-    background-color: #000000;
-    color: white;
-    padding: 25px 0px;
-    margin: 0px;
-    text-align: center;
-}
-
