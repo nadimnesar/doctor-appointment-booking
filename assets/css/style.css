@@ -140,6 +140,18 @@ a:active {
     border-radius: 10px;
     margin-left: 20px;
     margin-right: 20px;
+    padding-bottom: 10px;
+}
+
+.top-dr button {
+    background-color: #0c01fe;
+    border: none;
+    height: 35px;
+    width: 190px;
+    text-align: center;
+    font-size: 15px;
+    border-radius: 5px;
+    box-shadow: 1px 1px #ccc;
 }
 
 .dr-img {
@@ -155,6 +167,25 @@ a:active {
     padding-top: 10px;
 }
 
-.dr-info h3 {
+.dr-info {
+    padding-left: 10px;
+    padding-right: auto;
+}
 
+.dr-info h3 {
+    color: #3d3d3d;
+    font-weight: bolder;
+    font-size: 15pt;
+}
+
+.dr-info p {
+    color: #3d3d3d;
+    font-size: 11pt;
+}
+
+.dr-info ul {
+    padding-left: 0px;
+    list-style: none;
+    color: #3d3d3d;
+    font-size: 13pt;
 }
