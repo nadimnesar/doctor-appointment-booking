@@ -59,7 +59,7 @@ a:active {
 }
 
 .search-txt {
-    padding-top: 35px;
+    padding-top: 85px;
     text-align: center;
     line-height: 10pt;
 }
@@ -74,8 +74,28 @@ a:active {
     color: #444444;
 }
 
-
 .search-box {
     margin: auto;
     text-align: center;
 }
+
+.search-box select {
+    width: 220px;
+    height: 35px;
+    border: 1px solid rgb(179, 179, 179);
+    font-size: 15px;
+    border-radius: 5px;
+    box-shadow: 1px 1px #ccc;
+}
+
+.search-box button {
+    background-color: #0c01fe;
+    border: none;
+    color: white;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    border-radius: 5px;
+  }
