@@ -5,4 +5,3 @@ Pages:
 * Login Page
 * SignUp Page
 * List of Doctor
-* Doctor Profile
