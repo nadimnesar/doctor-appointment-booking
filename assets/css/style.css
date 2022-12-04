@@ -13,7 +13,7 @@ a:link {
 a:visited {
     text-decoration: none;
     padding: 7px 10px;
-    color: #0c01fe;
+    color: black;
 }
 
 a:hover {
@@ -25,6 +25,7 @@ a:hover {
 a:active {
     text-decoration: none;
     padding: 7px 10px;
+    color: #0c01fe;
 }
 
 .header-nav {
