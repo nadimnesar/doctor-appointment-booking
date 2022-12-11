@@ -24,7 +24,7 @@ if (isset($_POST['submit'])) {
             } else {
                 $insert = "INSERT INTO user_form(email, password, user_type, name) VALUES('$email','$pass','$user_type','$name')";
                 mysqli_query($conn, $insert);
-                header('location:login.php');
+                @header('location:login.php');
             }
         }
     }

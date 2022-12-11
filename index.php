@@ -200,13 +200,22 @@ if (isset($get_drid) and isset($get_usrid)) {
                             </li>
                         </ul>
                     </div>
-                    <center>
-                        <button>
-                            <a style='color: white;' href='index.php?get_dr_id=$dr_id'>Appoint Now</a>
-                        </button>
-                    </center>
-                </div>
-            ";
+                ";
+
+            if (!isset($_SESSION['login_done'])) {
+                echo "
+                        </div>
+                    ";
+            } else {
+                echo "
+                        <center>
+                            <button>
+                                <a style='color: white;' href='index.php?get_dr_id=$dr_id'>Appoint Now</a>
+                            </button>
+                        </center>
+                        </div>
+                    ";
+            }
         }
         ?>
     </div>
