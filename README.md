@@ -4,4 +4,5 @@ Pages:
 * Home Page
 * Login Page
 * SignUp Page
-* List of Doctor
+* Search Doctor
+* Appointment List
