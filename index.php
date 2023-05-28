@@ -162,7 +162,7 @@ if (isset($get_drid) and isset($get_usrid)) {
     <div class="top-all">
 
         <?php
-        $query = "Select * From `dr_list` order by `id` ASC LIMIT 5;";
+        $query = "Select * From `dr_list` order by `id` DESC LIMIT 5;";
         $q_res = mysqli_query($conn, $query);
 
         while ($row = mysqli_fetch_assoc($q_res)) {
@@ -178,7 +178,7 @@ if (isset($get_drid) and isset($get_usrid)) {
             echo "
                 <div class='top-dr'>
                     <div class='dr-img-m'>
-                        <img class='dr-img' alt='$dr_name' src='assets/img/doctor/$dr_img_id.jpg'>
+                        <img class='dr-img' alt='$dr_name' src='assets/img/doctor/$dr_img_id'>
                     </div>
                     <div class='dr-info'>
                         <h3>

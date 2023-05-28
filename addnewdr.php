@@ -9,22 +9,27 @@ if (isset($_POST['submit'])) {
     $district = $_POST['district'];
     $day = $_POST['day'];
     $money = $_POST['money'];
-    $img = $_COOKIE['imagename'];
-    $q = "INSERT INTO drlist(name, specialty, divison, district, day, money, img) VALUES('$name','$specialty','$divison','$district', '$day', '$money', '$img');";
-    mysqli_query($connect, $q);
+
+    $targetFolder = './assets/img/doctor/';
+    $tempFilePath = $_FILES['imageFile']['tmp_name'];
+
+    $img = uniqid() . '_' . $_FILES['imageFile']['name'];
+    $targetPath = $targetFolder . $img;
+    move_uploaded_file($tempFilePath, $targetPath);
+
+    $q = "INSERT INTO dr_list(name, img_id, specialty, division, district, day, money) VALUES('$name', '$img','$specialty','$divison','$district', '$day', '$money');";
+    mysqli_query($conn, $q);
     @header('location:index.php');
 };
 
 ?>
 
-
-
 <section>
     <div class="form-container3">
-        <form method="post">
+        <form method="post" enctype="multipart/form-data">
             <h3>Add New Doctor</h3>
             <input type="text" name="name" required placeholder="Enter Name">
-            <input type="file" id="imageInput" accept="image/*">
+            <input type="file" name="imageFile" accept="image/*">
             <select name="specialty">
                 <option value="">Choose Specialty</option>
                 <option value="Gastro Liver">Gastro Liver</option>
@@ -157,7 +162,7 @@ if (isset($_POST['submit'])) {
                 <option value="Friday">Friday</option>
             </select>
             <input type="text" name="money" required placeholder="Enter Money">
-            <button type="submit" name="submit" class="form-btn" onclick="image_upload()"> Add Now </button>
+            <input type="submit" name="submit" value="Add Now" class="form-btn">
         </form>
     </div>
 </section>
