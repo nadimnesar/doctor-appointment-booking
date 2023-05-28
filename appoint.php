@@ -34,7 +34,7 @@ include('header.php');
                 echo "
                         <div class='top-dr'>
                             <div class='dr-img-m'>
-                                <img class='dr-img' alt='$dr_name' src='assets/img/doctor/$dr_img_id.jpg'>
+                                <img class='dr-img' alt='$dr_name' src='assets/img/doctor/$dr_img_id'>
                             </div>
                             <div class='dr-info'>
                                 <h3>
