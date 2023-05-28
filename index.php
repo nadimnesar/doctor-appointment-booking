@@ -200,7 +200,7 @@ if (isset($get_drid) and isset($get_usrid)) {
                     </div>
                 ";
 
-            if (isset($_SESSION['login_done']) && $_SESSION['login_done_type'] == 'admin') {
+            if (isset($_SESSION['login_done']) && $_SESSION['login_done_type'] == 'user') {
                 echo "
                         <center>
                             <button>
