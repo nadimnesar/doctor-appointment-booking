@@ -14,24 +14,24 @@ include('header.php');
 
     <div class="top-all">
         <?php
-            $query = "Select * From `user_appoint` where user_id = '$get_usrid' Order By id DESC;";
-            $q_res = mysqli_query($conn, $query);
+        $query = "Select * From `user_appoint` where user_id = '$get_usrid' Order By id DESC;";
+        $q_res = mysqli_query($conn, $query);
 
-            while ($row = mysqli_fetch_assoc($q_res)) {
-                $dr_id = $row['dr_id'];
+        while ($row = mysqli_fetch_assoc($q_res)) {
+            $dr_id = $row['dr_id'];
 
-                $query2 = "Select * From `dr_list` where id = '$dr_id';";
-                $q_res2 = mysqli_query($conn, $query2);
+            $query2 = "Select * From `dr_list` where id = '$dr_id';";
+            $q_res2 = mysqli_query($conn, $query2);
 
-                while ($row2 = mysqli_fetch_assoc($q_res2)) {
-                    $dr_name = $row2['name'];
-                    $dr_img_id = $row2['img_id'];
-                    $dr_specialty = $row2['specialty'];
-                    $dr_division = $row2['division'];
-                    $dr_district = $row2['district'];
-                    $dr_day = $row2['day'];
-                    $dr_money = $row2['money'];
-                    echo "
+            while ($row2 = mysqli_fetch_assoc($q_res2)) {
+                $dr_name = $row2['name'];
+                $dr_img_id = $row2['img_id'];
+                $dr_specialty = $row2['specialty'];
+                $dr_division = $row2['division'];
+                $dr_district = $row2['district'];
+                $dr_day = $row2['day'];
+                $dr_money = $row2['money'];
+                echo "
                         <div class='top-dr'>
                             <div class='dr-img-m'>
                                 <img class='dr-img' alt='$dr_name' src='assets/img/doctor/$dr_img_id.jpg'>
@@ -56,8 +56,8 @@ include('header.php');
                             </div>
                         </div>
                     ";
-                }
             }
+        }
         ?>
     </div>
 </section>

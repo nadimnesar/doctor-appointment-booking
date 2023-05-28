@@ -33,27 +33,27 @@ if (isset($_POST['submit'])) {
 
 <section>
 
-<div class="form-container2">
-    <form action="" method="post">
-        <h3>Signup Now</h3>
-        <?php
-        if (isset($error)) {
-            foreach ($error as $error) {
-                echo '<span class="error-msg">' . $error . '</span>';
+    <div class="form-container2">
+        <form action="" method="post">
+            <h3>Signup Now</h3>
+            <?php
+            if (isset($error)) {
+                foreach ($error as $error) {
+                    echo '<span class="error-msg">' . $error . '</span>';
+                };
             };
-        };
-        ?>
-        <input type="text" name="name" required placeholder="Enter Your Name">
-        <input type="email" name="email" required placeholder="Enter Your Email">
-        <input type="password" name="password" required placeholder="Enter Your Password">
-        <input type="password" name="cpassword" required placeholder="Confirm Your Password">
-        <select name="user_type">
-            <option value="user">user</option>
-            <option value="admin">admin</option>
-        </select>
-        <input type="submit" name="submit" value="Signup" class="form-btn">
-    </form>
-</div>
+            ?>
+            <input type="text" name="name" required placeholder="Enter Your Name">
+            <input type="email" name="email" required placeholder="Enter Your Email">
+            <input type="password" name="password" required placeholder="Enter Your Password">
+            <input type="password" name="cpassword" required placeholder="Confirm Your Password">
+            <select name="user_type">
+                <option value="user">user</option>
+                <option value="admin">admin</option>
+            </select>
+            <input type="submit" name="submit" value="Signup" class="form-btn">
+        </form>
+    </div>
 
 </section>
 

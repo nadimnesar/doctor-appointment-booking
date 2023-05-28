@@ -28,21 +28,21 @@ if (isset($_POST['submit'])) {
 
 <section>
 
-<div class="form-container">
-    <form action="" method="post">
-        <h3 class="title">Login Now</h3>
-        <?php
-        if (isset($error)) {
-            foreach ($error as $error) {
-                echo '<span class="error-msg">' . $error . '</span>';
+    <div class="form-container">
+        <form action="" method="post">
+            <h3 class="title">Login Now</h3>
+            <?php
+            if (isset($error)) {
+                foreach ($error as $error) {
+                    echo '<span class="error-msg">' . $error . '</span>';
+                }
             }
-        }
-        ?>
-        <input type="email" name="usermail" placeholder="Enter your email" class="box" required>
-        <input type="password" name="password" placeholder="Enter your password" class="box" required>
-        <input type="submit" value="Login" class="form-btn" name="submit">
-    </form>
-</div>
+            ?>
+            <input type="email" name="usermail" placeholder="Enter your email" class="box" required>
+            <input type="password" name="password" placeholder="Enter your password" class="box" required>
+            <input type="submit" value="Login" class="form-btn" name="submit">
+        </form>
+    </div>
 
 </section>
 
