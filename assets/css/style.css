@@ -359,3 +359,62 @@ a:active {
     color:red;
     font-size: 15px;
 }
+
+.form-container3 {
+    min-height: 120vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-container3 form {
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .1);
+    background: #fff;
+    text-align: center;
+    width: 500px;
+    height: 400px;
+    padding-bottom: 200px
+}
+
+.form-container3 form h3 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.form-container3 form input,
+.form-container3 form select,
+.form-container3 form button {
+    width: 90%;
+    padding: 10px 15px;
+    font-size: 17px;
+    margin: 8px 0;
+    background: #f8f9fa;
+    border: #f8f9fa;
+    border-radius: 20px;
+}
+
+.form-container3 form select option {
+    background: #fff;
+}
+
+.form-container3 form .form-btn {
+    color: white;
+    background-color: #0c01fe;
+    text-transform: capitalize;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.form-container3 form p {
+    margin-top: 10px;
+    font-size: 20px;
+    color: #333;
+}
+
+.form-container3 form .error-msg{
+    background: #fff;
+    color:red;
+    font-size: 15px;
+}

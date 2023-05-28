@@ -37,7 +37,7 @@ session_start();
                     if ($_SESSION['login_done_type'] == 'admin') {
                         echo '
                             <li class="nav-items">
-                                <a href="appoint.php">Add New Doctor</a>
+                                <a href="addnewdr.php">Add New Doctor</a>
                             </li>
                         ';
                     } else {
