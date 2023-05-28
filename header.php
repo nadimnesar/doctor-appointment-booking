@@ -33,19 +33,27 @@ session_start();
                     <a href="index.php">Home</a>
                 </li>
                 <?php
-                    if(isset($_SESSION['login_done'])){
+                if (isset($_SESSION['login_done'])) {
+                    if ($_SESSION['login_done_type'] == 'admin') {
+                        echo '
+                            <li class="nav-items">
+                                <a href="appoint.php">Add New Doctor</a>
+                            </li>
+                        ';
+                    } else {
                         echo '
                             <li class="nav-items">
                                 <a href="appoint.php">Appointments</a>
                             </li>
                         ';
                     }
+                }
                 ?>
             </ul>
             <ul class="nav-ul-r">
                 <?php
-                    if(!isset($_SESSION['login_done'])){
-                        echo '
+                if (!isset($_SESSION['login_done'])) {
+                    echo '
                             <li class="nav-items-r">
                                 <a href="login.php">Login</a>
                             </li>
@@ -53,15 +61,14 @@ session_start();
                                 <a href="signup.php">Signup</a>
                             </li>
                         ';
-                    }
-                    else{
-                        echo '<li class="nav-items-r" >';
-                        echo 'Hi, '.$_SESSION['login_done'];
-                        echo '</li>';
-                        echo '<li class="nav-items-r" >';
-                        echo '<a href="logout.php">Logout</a>';
-                        echo '</li>';
-                    }
+                } else {
+                    echo '<li class="nav-items-r" >';
+                    echo 'Hi, ' . $_SESSION['login_done'];
+                    echo '</li>';
+                    echo '<li class="nav-items-r" >';
+                    echo '<a href="logout.php">Logout</a>';
+                    echo '</li>';
+                }
                 ?>
             </ul>
         </div>
