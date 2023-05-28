@@ -1,7 +1,5 @@
 <?php
 
-session_start();
-@include 'config.php';
 include('header.php');
 
 $s_division = $_GET['divison'];

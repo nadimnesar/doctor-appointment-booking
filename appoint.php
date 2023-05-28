@@ -1,7 +1,5 @@
 <?php
 
-session_start();
-@include 'config.php';
 include('header.php');
 
 @$get_usrid = $_SESSION['login_done_id'];

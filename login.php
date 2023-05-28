@@ -1,7 +1,6 @@
 <?php
 
-@include 'config.php';
-session_start();
+include('header.php');
 
 if (isset($_POST['submit'])) {
     $email = mysqli_real_escape_string($conn, $_POST['usermail']);
@@ -16,17 +15,14 @@ if (isset($_POST['submit'])) {
 
         $_SESSION['login_done'] = $row['name'];
         $_SESSION['login_done_id'] = $row['id'];
+        $_SESSION['login_done_type'] = $row['user_type'];
+
+
         header('location: index.php');
     } else {
         $error[] = 'Incorrect Password or Email.';
     }
 };
-
-?>
-
-<?php
-
-include('header.php');
 
 ?>
 

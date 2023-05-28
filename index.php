@@ -1,7 +1,5 @@
 <?php
 
-session_start();
-@include 'config.php';
 include('header.php');
 
 @$get_drid = $_GET['get_dr_id'];
