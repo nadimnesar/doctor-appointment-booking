@@ -21,7 +21,7 @@ git clone https://github.com/your-username/doctor-appointment-website.git
 
 2. Set up a local web server environment (e.g., XAMPP, WAMP) with PHP and MySQL support.
 
-3. Import the provided MySQL database dump (`database.sql`) into your MySQL server.
+3. Import the provided MySQL database dump (`drsappoint_db.sql`) into your MySQL server.
 
 4. Update the database connection settings in the PHP files (`config.php`) to match your local environment.
 
