@@ -16,7 +16,7 @@ This repository contains the source code for a doctor's appointment booking webs
 1. Clone the repository to your local machine:
 
 ```bash
-git clone https://github.com/your-username/doctor-appointment-website.git
+git clone https://github.com/nadimnesar/doctor-appointment-booking.git
 ```
 
 2. Set up a local web server environment (e.g., XAMPP, WAMP) with PHP and MySQL support.
@@ -27,7 +27,7 @@ git clone https://github.com/your-username/doctor-appointment-website.git
 
 5. Navigate to the website's directory in your web server's document root.
 
-6. Access the website through your web browser (e.g., `http://localhost/doctor-appointment-website`).
+6. Access the website through your web browser (e.g., `http://localhost/doctor-appointment-booking`).
 
 ## Contributors
 
